@@ -1,0 +1,75 @@
+@import './imports/variables';
+@import './imports/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// reset
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+// propriétés générales
+
+body {
+  margin: auto;
+  max-width: 1240px;
+  overflow-x: hidden;
+}
+
+#root {
+  @include col;
+  gap: 50px;
+  padding-top: 45px;
+  @media (max-width: 1280px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 40px;
+  }
+  @media (max-width: 768px) {
+    gap: 22px;
+    padding-top: 20px;
+  }
+}
+
+h1 {
+  font-size: $biggest;
+  font-weight: $bold;
+  color: white;
+  text-shadow:
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+  @media (max-width: 768px) {
+    font-size: $medium;
+  }
+}
+
+h2 {
+  font-size: $big;
+  font-weight: $regular;
+  color: $main-color;
+}
+
+h3 {
+  font-size: $normal;
+  font-weight: $bold;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+span {
+  font-size: $normal;
+  font-weight: $regular;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,12 @@
+@import '../imports/variables';
+@import '../imports/mixins';
+
+/* styles pour la page à propos */
+
+.Contact {
+  @include col-ac;
+  gap: 38px;
+  @media (max-width: 768px) {
+    gap: 19px;
+  }
+}

@@ -1,0 +1,68 @@
+@import '../imports/variables';
+@import '../imports/mixins';
+
+.collapse {
+  border: none;
+  border-radius: 5px;
+  max-width: 1023px;
+  width: 100%;
+  padding: 10px 15px;
+  @media (max-width: 768px) {
+    max-width: 582px;
+    padding: 10px 20px 10px 10px;
+  }
+  @media (max-width: 400px) {
+    max-width: 335px;
+    padding: 10px;
+  }
+}
+
+.collapse-button {
+  @include row-jsb-ac;
+  background-color: $main-color;
+  color: white;
+  height: 54px;
+  font-size: $medium;
+  font-weight: $bold;
+  @media (max-width: 768px) {
+    height: 52px;
+    font-size: $normal;
+  }
+  @media (max-width: 400px) {
+    height: 30px;
+    font-size: 13px;
+  }
+}
+
+.content {
+  @include row-js-ac;
+  background-color: $secondary-color;
+  font-size: $normal;
+  font-weight: $light;
+  @media (max-width: 400px) {
+    font-size: $smallest;
+  }
+}
+
+.content-parent {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.5s;
+}
+
+.chevron-open {
+  transform: rotate(-180deg);
+  transition: 0.5s;
+  font-size: $medium;
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.chevron-close {
+  transition: 0.5s;
+  font-size: $medium;
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+}

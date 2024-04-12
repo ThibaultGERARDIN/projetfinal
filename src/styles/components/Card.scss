@@ -1,0 +1,19 @@
+@import '../imports/variables';
+@import '../imports/mixins';
+
+.Card {
+  @include row-js-ae;
+  border: none;
+  border-radius: 10px;
+  height: 340px;
+  width: 340px;
+  background-position: center;
+  padding: 20px;
+  @media (max-width: 768px) {
+    height: 255px;
+    width: 335px;
+  }
+  @media (max-width: 370px) {
+    width: 100%;
+  }
+}

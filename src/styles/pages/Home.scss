@@ -1,0 +1,28 @@
+@import '../imports/variables';
+@import '../imports/mixins';
+
+/* styles pour la page d'acceuil */
+
+.Home {
+  @include col-ac;
+  gap: 50px;
+  @media (max-width: 768px) {
+    gap: 22px;
+  }
+}
+
+.Home-cards {
+  @include row-jsa-w;
+  gap: 55px;
+  width: 100%;
+  height: fit-content;
+  border: none;
+  border-radius: 25px;
+  background-color: $secondary-color;
+  padding: 55px;
+  @media (max-width: 890px) {
+    background-color: white;
+    gap: 22px;
+    padding: 0;
+  }
+}

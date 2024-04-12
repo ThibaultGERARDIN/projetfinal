@@ -1,0 +1,36 @@
+@import '../imports/variables';
+@import '../imports/mixins';
+
+/* styles du header */
+
+.Header {
+  @include row-jsb-ac;
+  nav {
+    display: flex;
+    gap: 57px;
+    a {
+      font-size: $medium;
+      font-weight: $regular;
+    }
+  }
+  @media (max-width: 768px) {
+    img {
+      width: 145px;
+    }
+    nav {
+      gap: 22px;
+      a {
+        text-transform: uppercase;
+        font-size: $smallest;
+      }
+    }
+  }
+}
+
+.highlight {
+  text-decoration: underline;
+}
+
+.header-logo {
+  height: 100px;
+}
