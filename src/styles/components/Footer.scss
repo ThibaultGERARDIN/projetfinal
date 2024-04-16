@@ -4,8 +4,18 @@
 /* styles du footer */
 
 .footer {
+  padding: 20px 0;
   align-self: center;
   width: 1440px;
-  background-color: black;
-  @include row-jc-ac;
+  // background-color: $secondary-color;
+  @include col-ac;
+  gap: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  color: $secondary-color;
+}
+.footer-logo {
+  height: 100px;
 }

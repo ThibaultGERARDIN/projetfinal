@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo-light.png'
 import '../../styles/components/Header.scss'
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
   const currentLocation = location.pathname
   return (
     <div className="Header">
-      <img src={logo} alt="Logo Kasa" className="header-logo" />
+      <img src={logo} alt="Logo TGdev" className="header-logo" />
       <nav>
         <Link to="/" className={currentLocation === '/' ? 'highlight' : ''}>
           Accueil

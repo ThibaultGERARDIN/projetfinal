@@ -3,7 +3,6 @@
 
 .collapse {
   border: none;
-  border-radius: 5px;
   max-width: 1023px;
   width: 100%;
   padding: 10px 15px;
@@ -19,8 +18,8 @@
 
 .collapse-button {
   @include row-jsb-ac;
-  background-color: $main-color;
-  color: white;
+  background-color: $bg-color-light;
+  color: $secondary-color;
   height: 54px;
   font-size: $medium;
   font-weight: $bold;

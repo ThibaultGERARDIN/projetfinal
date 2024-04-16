@@ -11,18 +11,64 @@
   }
 }
 
-.Home-cards {
-  @include row-jsa-w;
-  gap: 55px;
+.about-me {
   width: 100%;
-  height: fit-content;
-  border: none;
-  border-radius: 25px;
-  background-color: $secondary-color;
-  padding: 55px;
-  @media (max-width: 890px) {
-    background-color: white;
-    gap: 22px;
-    padding: 0;
+  padding: 40px;
+  @include row-jsb-ac;
+  gap: 40px;
+  background-color: $bg-color-dark;
+  .photo-profil {
+    height: 600px;
+    border: 5px solid $main-color;
+  }
+
+  .description {
+    @include col-jsb-ac;
+    height: 600px;
+    gap: 20px;
+
+    .description-txt {
+      padding: 20px;
+      background-color: $bg-color-light;
+      color: $secondary-color;
+      font-size: $medium;
+      font-weight: $regular;
+      height: 80%;
+      text-align: justify;
+    }
+
+    .about-links {
+      width: 100%;
+      @include row-jsb-ac;
+
+      .home-link {
+        border: none;
+        border-radius: 0;
+        font-size: $medium;
+        font-weight: $bold;
+        color: $main-color;
+        background-color: $third-color;
+        @include row-js-ac;
+        gap: 20px;
+        padding: 20px;
+        width: 45%;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.skills {
+  width: 100%;
+  padding: 40px;
+  background-color: $bg-color-dark;
+  @include col-ac;
+  gap: 20px;
+  .skills-collapse {
+    @include row-jsb;
+    width: 100%;
+    .collapse {
+      flex: 1 1 0;
+    }
   }
 }

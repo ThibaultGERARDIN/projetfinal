@@ -2,10 +2,15 @@ import '../../styles/pages/Portfolio.scss'
 import Card from '../../components/Card'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import Banner from '../../components/Banner'
+
 
 function Portfolio() {
   return (
     <div className="Portfolio">
+        <Banner>
+        <h2>PORTFOLIO</h2>
+      </Banner>
       <div className="Portfolio-cards">
         <Link to={`/portfolio/Booki`}>
           <Card id="1" title="Booki" />

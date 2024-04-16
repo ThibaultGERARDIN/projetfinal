@@ -4,6 +4,7 @@
 /* styles du header */
 
 .Header {
+  padding-top: 45px;
   @include row-jsb-ac;
   nav {
     display: flex;
@@ -11,6 +12,8 @@
     a {
       font-size: $medium;
       font-weight: $regular;
+  color: $secondary-color;
+
     }
   }
   @media (max-width: 768px) {

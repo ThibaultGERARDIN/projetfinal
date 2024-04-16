@@ -14,15 +14,33 @@
 // propriétés générales
 
 body {
-  margin: auto;
-  max-width: 1240px;
-  overflow-x: hidden;
+  position: relative;
+  background-color: #1b2529; //#263238
+  background: radial-gradient(
+    ellipse at center,
+    rgba(27, 37, 41, 1) 0%,
+    rgba(38, 50, 56, 1) 100%
+  );
+}
+
+// .background {
+//   position: relative;
+// }
+#stars {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 #root {
+  max-width: 1240px;
+  margin: auto;
   @include col;
   gap: 50px;
-  padding-top: 45px;
   @media (max-width: 1280px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -37,12 +55,13 @@ body {
 h1 {
   font-size: $biggest;
   font-weight: $bold;
-  color: white;
-  text-shadow:
-    -1px 1px 0 #000,
-    1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
+  color: $bg-color-dark;
+
+  // text-shadow:
+  //   -1px 1px 0 #000,
+  //   1px 1px 0 #000,
+  //   1px -1px 0 #000,
+  //   -1px -1px 0 #000;
   @media (max-width: 768px) {
     font-size: $medium;
   }

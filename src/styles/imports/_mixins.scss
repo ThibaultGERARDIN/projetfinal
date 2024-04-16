@@ -20,6 +20,13 @@
   justify-content: space-between;
 }
 
+@mixin col-jsb-ac {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 // flex row mixins j=justify content / a=align-items / w=wrap
 // c=center / s=start / e=end / sa=space-around / sb=space-between
 
