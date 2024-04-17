@@ -1,7 +1,4 @@
 import '../../styles/pages/Home.scss'
-import Card from '../../components/Card'
-import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
 import profil from '../../assets/profil.jpg'
@@ -45,12 +42,12 @@ function Home() {
       <div className="skills">
         <h2>Mes compétences</h2>
         <div className="skills-collapse">
-          <Collapse title="Languages" className="collapse">
-            HTML CSS ETC
-          </Collapse>
-          <Collapse title="Outils" className="collapse">
-            VScode, Figma, etc
-          </Collapse>
+          <div className="collapse">
+            <Collapse title="Languages">HTML CSS ETC</Collapse>
+          </div>
+          <div className="collapse">
+            <Collapse title="Outils">VScode, Figma, etc</Collapse>
+          </div>
         </div>
       </div>
     </div>

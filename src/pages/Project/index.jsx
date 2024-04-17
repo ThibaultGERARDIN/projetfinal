@@ -9,7 +9,7 @@ function Project() {
   return (
     <div className="Project">
       <Banner>
-        <h2>{projectName}</h2>
+        <h2 className="banner-title">{projectName}</h2>
       </Banner>
       <h2>Page du projet {projectName}</h2>
     </div>

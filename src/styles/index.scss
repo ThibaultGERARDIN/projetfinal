@@ -52,7 +52,8 @@ body {
   }
 }
 
-h1 {
+h1,
+.banner-title {
   font-size: $biggest;
   font-weight: $bold;
   color: $bg-color-dark;
@@ -74,9 +75,9 @@ h2 {
 }
 
 h3 {
-  font-size: $normal;
+  font-size: $big;
   font-weight: $bold;
-  color: white;
+  color: $bg-color-dark;
 }
 
 li {

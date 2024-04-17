@@ -1,35 +1,25 @@
 import '../../styles/pages/Portfolio.scss'
 import Card from '../../components/Card'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+
 import Banner from '../../components/Banner'
 
+let projects = require('../../projects.json')
 
 function Portfolio() {
   return (
     <div className="Portfolio">
-        <Banner>
-        <h2>PORTFOLIO</h2>
+      <Banner>
+        <h2 className="banner-title">PORTFOLIO</h2>
       </Banner>
       <div className="Portfolio-cards">
-        <Link to={`/portfolio/Booki`}>
-          <Card id="1" title="Booki" />
-        </Link>
-        <Link to={`/portfolio/Sophie-Buel`}>
-          <Card id="2" title="Sophie-Buel" />
-        </Link>
-        <Link to={`/portfolio/Menu-maker`}>
-          <Card id="3" title="Menu-maker" />
-        </Link>
-        <Link to={`/portfolio/Nina-Carducci`}>
-          <Card id="4" title="Nina-Carducci" />
-        </Link>
-        <Link to={`/portfolio/Kasa`}>
-          <Card id="4" title="Kasa" />
-        </Link>
-        <Link to={`/portfolio/Mon-vieux-grimoire`}>
-          <Card id="4" title="Mon-vieux-grimoire" />
-        </Link>
+        {projects.map(({ id, cover, name, excerpt }) => (
+          <div key={id} className="project-card">
+            <Link to={`/portfolio/${name}`}>
+              <Card id={id} title={name} cover={cover} excerpt={excerpt} />
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   )
