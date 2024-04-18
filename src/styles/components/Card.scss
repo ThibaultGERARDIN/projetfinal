@@ -39,7 +39,7 @@
   height: 100%;
   background-image: linear-gradient($third-color, $third-color);
   background-position: 50% 100%;
-  opacity: 0.95;
+  opacity: 0.85;
   background-repeat: no-repeat;
   background-size: 100% 0%;
   transition:
@@ -56,4 +56,5 @@ h3 {
   transition:
     transform 0.5s ease-out,
     color 0.8s;
+  transition-delay: 0.15s;
 }

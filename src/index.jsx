@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Portfolio from './pages/Portfolio'
+import ScrollToTop from './utils/ScrollToTop'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -19,6 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

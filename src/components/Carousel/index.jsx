@@ -27,7 +27,7 @@ function Carousel({ data }) {
         return (
           <img
             src={item}
-            alt="Photos de l'appartement"
+            alt="Screenshots du projet"
             key={index}
             className={slide === index ? 'slide' : 'slide slide-hidden'}
           />

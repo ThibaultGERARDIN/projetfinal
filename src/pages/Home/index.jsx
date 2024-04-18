@@ -3,6 +3,7 @@ import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
 import profil from '../../assets/profil.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -28,14 +29,24 @@ function Home() {
             </p>
           </div>
           <div className="about-links">
-            <button className="home-link">
+            <a
+              className="link"
+              href="https://github.com/ThibaultGERARDIN"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon="fa-brands fa-github" />
               Mon Github
-            </button>
-            <button className="home-link">
+            </a>
+            <a
+              className="link"
+              href="../images/cv.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon="fa-regular fa-file-pdf" />
               Mon CV
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -49,6 +60,9 @@ function Home() {
             <Collapse title="Outils">VScode, Figma, etc</Collapse>
           </div>
         </div>
+        <Link to="/portfolio">
+          <button className="link">Voir mon portfolio</button>
+        </Link>
       </div>
     </div>
   )

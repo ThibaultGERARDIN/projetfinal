@@ -40,15 +40,48 @@
     "id": "project3",
     "name": "Menu Maker",
     "cover": "../images/menu-maker/cover.png",
-    "pictures": [
-      "../images/menu-maker/fullpage.png",
-      "../images/menu-maker/login.png"
-    ],
+    "pictures": ["", ""],
     "excerpt": "",
     "description": "",
     "skills": "",
 
     "link": "",
     "tags": ["Gestion Projet", "Notion", "Kanban", "Veille", "Wakelet"]
+  },
+  {
+    "id": "project4",
+    "name": "Nina Carducci",
+    "cover": "../images/nina-carducci/cover.png",
+    "pictures": ["", ""],
+    "excerpt": "",
+    "description": "",
+    "skills": "",
+
+    "link": "",
+    "tags": ["SEO", "Débug", "Optimisation", "Lighthouse", "WAVE"]
+  },
+  {
+    "id": "project5",
+    "name": "Kasa",
+    "cover": "../images/kasa/cover.png",
+    "pictures": ["", ""],
+    "excerpt": "",
+    "description": "",
+    "skills": "",
+
+    "link": "",
+    "tags": ["React", "Create-React-App", "Yarn", "Sass", "Composants"]
+  },
+  {
+    "id": "project6",
+    "name": "Mon Vieux Grimoire",
+    "cover": "../images/mon-vieux-grimoire/cover.png",
+    "pictures": ["", ""],
+    "excerpt": "",
+    "description": "",
+    "skills": "",
+
+    "link": "",
+    "tags": ["NodeJS", "MongoDB", "Express", "API", "CRUD"]
   }
 ]

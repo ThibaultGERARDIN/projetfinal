@@ -1,3 +1,11 @@
 @import '../imports/variables';
 @import '../imports/mixins';
 
+.Project {
+  @include col-ac;
+  gap: 40px;
+  .project-collapse {
+    @include col-ac;
+    gap: 40px;
+  }
+}

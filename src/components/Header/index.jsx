@@ -7,7 +7,10 @@ function Header() {
   const currentLocation = location.pathname
   return (
     <div className="Header">
-      <img src={logo} alt="Logo TGdev" className="header-logo" />
+      <Link to="/">
+        {' '}
+        <img src={logo} alt="Logo TGdev" className="header-logo" />
+      </Link>
       <nav>
         <Link to="/" className={currentLocation === '/' ? 'highlight' : ''}>
           Accueil
