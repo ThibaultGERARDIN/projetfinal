@@ -1,0 +1,38 @@
+@import '../imports/variables';
+@import '../imports/mixins';
+
+.ContactMe {
+  width: 40%;
+  font-size: $medium;
+  @include col;
+  label {
+    color: $secondary-color;
+    margin-bottom: 10px;
+  }
+  .input-txt {
+    font-size: $medium;
+
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .input-select {
+    font-size: $medium;
+
+    border: none;
+    border-radius: 0;
+    padding: 0 10px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  textarea {
+    height: 200px;
+  }
+}
+
+.link {
+  margin-top: 40px;
+  height: 40px;
+  padding: 0px 20px;
+}

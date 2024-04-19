@@ -1,5 +1,11 @@
 @import './variables';
 
+@mixin shadow {
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
 // flex column mixins j=justify content / a=align-items
 // c=center / s=start / e=end / sa=space-around / sb=space-between
 

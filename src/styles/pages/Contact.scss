@@ -10,3 +10,16 @@
     gap: 19px;
   }
 }
+
+.contact-form {
+  @include col-ac;
+  @include shadow;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  background-color: $bg-color-light;
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}

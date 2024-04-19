@@ -1,5 +1,6 @@
 import '../../styles/pages/Contact.scss'
 import Banner from '../../components/Banner'
+import ContactMe from '../../components/ContactMe'
 
 function Contact() {
   return (
@@ -7,7 +8,13 @@ function Contact() {
       <Banner>
         <h2 className="banner-title">CONTACT</h2>
       </Banner>
-      <h2>Page contact avec formulaire</h2>
+      <div className="contact-form">
+        <h2>
+          Une question ? Un projet ? <br></br>
+          N’hésitez pas à me contacter !
+        </h2>
+        <ContactMe />
+      </div>
     </div>
   )
 }

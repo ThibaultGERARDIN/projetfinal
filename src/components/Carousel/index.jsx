@@ -5,6 +5,9 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+// import ModalImage from "react-modal-image";
 
 function Carousel({ data }) {
   const [slide, setSlide] = useState(0)
@@ -25,12 +28,14 @@ function Carousel({ data }) {
 
       {data.map((item, index) => {
         return (
+          // <Zoom>
           <img
             src={item}
             alt="Screenshots du projet"
-            key={index}
             className={slide === index ? 'slide' : 'slide slide-hidden'}
+            key={index}
           />
+          // </Zoom>
         )
       })}
       <FontAwesomeIcon
