@@ -15,9 +15,6 @@
   @media (max-width: 768px) {
     height: 255px;
   }
-  @media (max-width: 370px) {
-    width: 100%;
-  }
   overflow: hidden;
 
   :hover {
@@ -27,6 +24,9 @@
   :hover h3 {
     transform: translateY(-50px);
     color: $secondary-color;
+    @media (max-width: 768px) {
+      transform: translateY(-25px);
+    }
   }
 }
 
@@ -49,6 +49,12 @@
     text-align: center;
     font-size: $medium;
     font-weight: $regular;
+    @media (max-width: 768px) {
+      font-size: $normal;
+    }
+    @media (max-width: 400px) {
+      font-size: $small;
+    }
   }
 }
 

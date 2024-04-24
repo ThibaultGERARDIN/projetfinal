@@ -15,12 +15,7 @@
 
 body {
   position: relative;
-  background-color: #1b2529; //#263238
-  background: radial-gradient(
-    ellipse at center,
-    rgba(27, 37, 41, 1) 0%,
-    rgba(38, 50, 56, 1) 100%
-  );
+  background: radial-gradient(rgba(27, 37, 41, 1) 0%, rgba(38, 50, 56, 1) 100%);
 }
 
 #stars {
@@ -37,15 +32,16 @@ body {
   max-width: 1240px;
   margin: auto;
   @include col;
-  gap: 50px;
+  gap: 40px;
   @media (max-width: 1280px) {
     padding-left: 20px;
     padding-right: 20px;
-    gap: 40px;
+  }
+  @media (max-width: 1024px) {
+    gap: 30px;
   }
   @media (max-width: 768px) {
-    gap: 22px;
-    padding-top: 20px;
+    gap: 20px;
   }
 }
 
@@ -59,8 +55,15 @@ h1,
     1px 1px 0 #fff,
     1px -1px 0 #fff,
     -1px -1px 0 #fff;
+  @media (max-width: 1024px) {
+    font-size: $medium-big;
+  }
   @media (max-width: 768px) {
     font-size: $medium;
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    font-size: $normal;
   }
 }
 
@@ -68,12 +71,27 @@ h2 {
   font-size: $big;
   font-weight: $regular;
   color: $main-color;
+  @media (max-width: 1024px) {
+    font-size: $medium-big;
+  }
+  @media (max-width: 768px) {
+    font-size: $medium;
+  }
+  @media (max-width: 400px) {
+    font-size: $normal;
+  }
 }
 
 h3 {
   font-size: $big;
   font-weight: $bold;
   color: $bg-color-dark;
+  @media (max-width: 1024px) {
+    font-size: $medium-big;
+  }
+  @media (max-width: 768px) {
+    font-size: $medium;
+  }
 }
 
 li {
@@ -106,5 +124,17 @@ a {
   &:hover {
     transition: 0.5s ease-in-out;
     color: $secondary-color;
+  }
+  @media (max-width: 768px) {
+    font-size: $normal;
+    height: fit-content;
+    padding: 10px;
+    gap: 10px;
+  }
+  @media (max-width: 400px) {
+    font-size: $small;
+    height: fit-content;
+    padding: 5px;
+    gap: 5px;
   }
 }

@@ -4,24 +4,28 @@
 /* styles du header */
 
 .Header {
-  padding-top: 45px;
+  padding-top: 40px;
   @include row-jsb-ac;
   nav {
     display: flex;
     gap: 57px;
     a {
       font-size: $medium;
-      font-weight: $regular;
-  color: $secondary-color;
-
+      font-weight: $regular-bold;
+      color: $secondary-color;
+      transform: color;
+      &:hover {
+        transition: 0.5s ease-in-out;
+        color: $main-color;
+      }
     }
   }
+  @media (max-width: 1280px) {
+    padding-top: 20px;
+  }
   @media (max-width: 768px) {
-    img {
-      width: 145px;
-    }
     nav {
-      gap: 22px;
+      gap: 15px;
       a {
         text-transform: uppercase;
         font-size: $smallest;
@@ -35,5 +39,5 @@
 }
 
 .header-logo {
-  height: 100px;
+  height: 80px;
 }

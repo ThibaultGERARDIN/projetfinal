@@ -22,6 +22,7 @@
     "name": "Sophie Buel",
     "cover": "../images/sophie-buel/cover.png",
     "pictures": [
+      "../images/sophie-buel/cover.png",
       "../images/sophie-buel/fullpage.png",
       "../images/sophie-buel/login.png",
       "../images/sophie-buel/edit.png",
@@ -40,48 +41,100 @@
     "id": "project3",
     "name": "Menu Maker",
     "cover": "../images/menu-maker/cover.png",
-    "pictures": ["", ""],
-    "excerpt": "",
-    "description": "",
-    "skills": "",
-
+    "pictures": [
+      "../images/menu-maker/cover.png",
+      "../images/menu-maker/veille.png",
+      "../images/menu-maker/scrum.png",
+      "../images/menu-maker/kanban.png",
+      "../images/menu-maker/tache.png"
+    ],
+    "excerpt": "Apprentissage de la gestion de projet : veille technologique, choix des technologies adaptées, mise en place méthode agile et tableau Kanban.",
+    "description": "Ce projet vous implique dans la planification du développement d'un site web. Votre rôle consistera à planifier le développement du site web, sans intervenir directement dans le codage. Vous aurez accès à la maquette, aux spécifications fonctionnelles et aux User Stories du site. Vous entreprendrez une veille technologique pour rester informé des dernières tendances et technologies pertinentes pour le projet. Cela implique l'utilisation d'un système de veille pour suivre les évolutions dans le domaine du développement web. Vous serez chargé de rédiger les spécifications techniques du projet. Cela comprendra l'identification des besoins fonctionnels et la décomposition des fonctionnalités en tâches spécifiques. Vous utiliserez un outil de gestion de projet, comme Notion, pour organiser le projet et créer un tableau Kanban. Cela vous aidera à suivre le déroulement du projet de manière structurée et efficace.",
+    "skills": "Ce projet plus théorique m'a appris la gestion de projet en méthode agile. Il montre l'importance de l'anticipation et de la plannification avant de se lancer dans un projet, entre la recherche des technologies les plus adaptées, les validations avec le client, le montage de l'équipe nécessaire, l'anticipation du temps nécessaire etc. La veille technologique m'a permis d'en apprendre plus sur de nombreux languages, outils et frameworks qui pourront me servir à l'avenir.",
     "link": "",
-    "tags": ["Gestion Projet", "Notion", "Kanban", "Veille", "Wakelet"]
+    "tags": ["Gestion Projet Agile", "Notion", "Kanban", "Veille", "Wakelet"]
   },
   {
     "id": "project4",
     "name": "Nina Carducci",
     "cover": "../images/nina-carducci/cover.png",
-    "pictures": ["", ""],
-    "excerpt": "",
-    "description": "",
-    "skills": "",
-
+    "pictures": [
+      "../images/nina-carducci/cover.png",
+      "../images/nina-carducci/fullscreen.png",
+      "../images/nina-carducci/rapport1.png",
+      "../images/nina-carducci/rapport2.png",
+      "../images/nina-carducci/rapport3.png",
+      "../images/nina-carducci/rapport4.png"
+    ],
+    "excerpt": "Optimisation et débug du site portfolio d'une photographe. Correction de bugs, optimisation des performances et du référencement, correction des problèmes d'accessibilité",
+    "description": "Dans ce projet, vous travaillerez en tant que développeur freelance pour optimiser le référencement d’un site, en améliorant sa performance et son accessibilité. Votre première tâche sera d'identifier les problèmes de chargement et de référencement. Vous utiliserez des outils tels que Lighthouse et Wave pour évaluer les performances actuelles du site et son accessibilité. Vous proposerez ensuite des recommandations pour améliorer la vitesse de chargement, la structure du code, et le référencement. Après avoir élaboré ces recommandations, vous les appliquerez en modifiant le code du site. Votre objectif sera d'améliorer les performances et l'accessibilité du site pour un meilleur référencement sur les moteurs de recherche.Enfin, vous créerez un rapport illustrant les résultats avant et après les modifications. Ce rapport comprendra des captures d'écran des audits, ainsi que des explications sur les changements apportés et leur impact sur le référencement et l'accessibilité du site.",
+    "skills": "Ce projet m'a permis d'apréhender différement le développement, en partant d'un site déjà développé. Mettant l'accent sur l'optimisation du code et des images pour améliorer la performance, corriger les problèmes d'accessibilité et de référencement causés par un non respect des bases du code. J'ai également pu apprendre à utiliser google Lighthouse et le plugin Wave en mettant à profit les résultats fournis et les pistes d'amélioration que ces extensions proposent. Le site ayant été dévelopé en utilisatn JQuery et Bootstrap j'ai pu avoir un apperçu du fonctionnement de ces technologies.",
     "link": "",
-    "tags": ["SEO", "Débug", "Optimisation", "Lighthouse", "WAVE"]
+    "tags": [
+      "SEO",
+      "Débug",
+      "Optimisation",
+      "Lighthouse",
+      "WAVE",
+      "Accessibilité",
+      "Bootstrap",
+      "Rich snippet"
+    ]
   },
   {
     "id": "project5",
     "name": "Kasa",
     "cover": "../images/kasa/cover.png",
-    "pictures": ["", ""],
-    "excerpt": "",
-    "description": "",
-    "skills": "",
+    "pictures": [
+      "../images/kasa/home.png",
+      "../images/kasa/about.png",
+      "../images/kasa/fiche.png",
+      "../images/kasa/error.png",
+      "../images/kasa/mobile.png",
+      "../images/kasa/mobile2.png"
+    ],
+    "excerpt": "Développement d'une application de location en React avec Create React App et Sass. Utilisation de react router et des composants.",
+    "description": "Dans ce projet, vous allez implémenter le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. Vous travaillerez sur la logique de présentation des données et les composants React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur. Vous utiliserez React Router pour configurer la navigation entre les différentes pages de l'application. Cela vous permettra de comprendre comment gérer efficacement le routage dans une application web moderne. Le projet se concentrera exclusivement sur le développement front-end, en se basant sur les maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON. Vous débuterez le projet avec Create React App, un outil qui simplifie la configuration initiale d'une application React. Vous utiliserez également Node.js pour exécuter du code JavaScript en dehors du navigateur.",
+    "skills": "Première approche de la librairie/framework React (la deuxième étant ce portfolio !), ce projet m'a permis de bien prendre en main cette stack. Création d'une application frontend OnePage, avec React Routeur et en méttant pleinement à profit la puissance de React et de son fonctionnement par composants. L'utilisation de Sass pour la partie style à également été une découverte, révolutionnant mon utilisation d'un CSS basique.",
 
-    "link": "",
-    "tags": ["React", "Create-React-App", "Yarn", "Sass", "Composants"]
+    "link": "https://github.com/ThibaultGERARDIN/projet6-react",
+    "tags": [
+      "React",
+      "Create-React-App",
+      "React router",
+      "Yarn",
+      "Sass",
+      "Composants",
+      "Framework",
+      "Prettier"
+    ]
   },
   {
     "id": "project6",
     "name": "Mon Vieux Grimoire",
     "cover": "../images/mon-vieux-grimoire/cover.png",
-    "pictures": ["", ""],
-    "excerpt": "",
-    "description": "",
-    "skills": "",
+    "pictures": [
+      "../images/mon-vieux-grimoire/fullpage.png",
+      "../images/mon-vieux-grimoire/book.png",
+      "../images/mon-vieux-grimoire/login.png",
+      "../images/mon-vieux-grimoire/addbook.png",
+      "../images/mon-vieux-grimoire/database.png"
+    ],
+    "excerpt": "Création du backend d'une application de notation de livres avec NodeJs et MongoDB. Gestion des opérations CRUD, création d'une API et mise en place d'une base de données.",
+    "description": "Votre rôle sera de créer un serveur avec Express et de le connecter à une base de données MongoDB. Cela impliquera la mise en place de la structure du serveur et la gestion de la communication entre le serveur et la base de données. Vous développerez les modèles de données et implémenterez des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) pour la gestion des livres et des notations. Cela nécessitera une attention particulière à la sécurité des données et à leur stockage sécurisé. Vous devrez implémenter un système d'authentification sécurisé pour les utilisateurs du site. Le projet comprendra également la gestion du téléchargement et de l'optimisation des images, ainsi que l'ajout de fonctionnalités pour noter les livres et calculer la note moyenne. Vous respecterez les bonnes pratiques du Green Code pour réduire l'empreinte écologique du site. Pour compléter le projet, vous utiliserez Mongoose pour modéliser les données MongoDB, et vous suivrez une architecture MVC (Modèle-Vue-Contrôleur) pour structurer votre application.",
+    "skills": "Ce projet nous plonge en plein de développement backend avec NodeJS. Création d'un serveur express, des middlewares et controlleurs nécessaires à toutes les opérations CRUD. Création d'une base de données noSQL avec MongoDB. Utilisation de sharp et multer pour l'optimisation des images que les utilisateurs vont uploader. Gestion et sécurisation d'un système de login.",
 
-    "link": "",
-    "tags": ["NodeJS", "MongoDB", "Express", "API", "CRUD"]
+    "link": "https://github.com/ThibaultGERARDIN/projet7-backend",
+    "tags": [
+      "NodeJS",
+      "MongoDB",
+      "Express",
+      "API",
+      "CRUD",
+      "Multer",
+      "Sharp",
+      "Login",
+      "Sécurisation"
+    ]
   }
 ]

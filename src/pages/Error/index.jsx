@@ -9,7 +9,7 @@ function Error() {
         <h2>Oups ! La page que vous demandez n'existe pas.</h2>
       </span>
 
-      <Link to="/">Retourner sur la page d'accueil</Link>
+      <Link to="/" className='link'>Retourner sur la page d'accueil</Link>
     </div>
   )
 }

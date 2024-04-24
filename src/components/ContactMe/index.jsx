@@ -75,7 +75,7 @@ const ContactMe = () => {
       </select>
       <label htmlFor="message">Votre message</label>
       <textarea name="message" id="message" required />
-      <input type="submit" value="Envoyer" className="link" />
+      <input type="submit" value="Envoyer" className="link submit" />
     </form>
   )
 }

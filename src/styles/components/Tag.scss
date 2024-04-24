@@ -2,11 +2,11 @@
 @import '../imports/mixins';
 
 .Tag {
-  display: flex;
-  gap: 10px;
+  @include row-jc-ac;
+  flex-wrap: wrap;
+  gap: 20px;
   @media (max-width: 768px) {
-    flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
   }
   transform: color;
   :hover {
@@ -26,9 +26,12 @@
   font-weight: $bold;
   box-sizing: border-box;
   padding: 0 10px;
+  @media (max-width: 768px) {
+    font-size: $small;
+  }
   @media (max-width: 400px) {
     min-width: 84px;
     height: 18px;
-    font-size: 10px;
+    font-size: $smallest;
   }
 }

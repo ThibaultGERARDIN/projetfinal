@@ -1,18 +1,15 @@
 @import '../imports/variables';
 @import '../imports/mixins';
 
-.Portfolio {
+.Portfolio, .Portfolio-cards {
   @include col-ac;
-  gap: 30px;
+  gap: 40px;
   width: 100%;
+
+  
+  .project-card {
+    width: 100%;
+  }
 }
 
-.Portfolio-cards {
-  width: 100%;
-  @include col-ac;
-  gap: 30px;
-}
 
-.project-card {
-  width: 100%;
-}

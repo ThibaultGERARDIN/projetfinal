@@ -36,7 +36,7 @@ const particleCount = 40,
   noiseLength = 1000,
   noiseStrength = 1
 
-var canvas = document.getElementById('stars'),
+let canvas = document.getElementById('stars'),
   //orbits = document.getElementById('orbits'),
   context = canvas.getContext('2d'),
   mouse = { x: 0, y: 0 },
@@ -56,7 +56,7 @@ var canvas = document.getElementById('stars'),
   flares = []
 
 function init() {
-  var i, j, k
+  let i, j, k
 
   // requestAnimFrame polyfill
   const requestAnimFrame = (function () {
@@ -78,21 +78,21 @@ function init() {
 
   // Create particle positions
   for (i = 0; i < particleCount; i++) {
-    var p = new Particle()
+    let p = new Particle()
     particles.push(p)
     points.push([p.x * c, p.y * c])
   }
 
   // Delaunay triangulation
 
-  var Delaunay
+  let Delaunay
   ;(function () {
     'use strict'
 
-    var EPSILON = 1.0 / 1048576.0
+    let EPSILON = 1.0 / 1048576.0
 
     function supertriangle(vertices) {
-      var xmin = Number.POSITIVE_INFINITY,
+      let xmin = Number.POSITIVE_INFINITY,
         ymin = Number.POSITIVE_INFINITY,
         xmax = Number.NEGATIVE_INFINITY,
         ymax = Number.NEGATIVE_INFINITY,
@@ -124,7 +124,7 @@ function init() {
     }
 
     function circumcircle(vertices, i, j, k) {
-      var x1 = vertices[i][0],
+      let x1 = vertices[i][0],
         y1 = vertices[i][1],
         x2 = vertices[j][0],
         y2 = vertices[j][1],
@@ -176,7 +176,7 @@ function init() {
     }
 
     function dedup(edges) {
-      var i, j, a, b, m, n
+      let i, j, a, b, m, n
 
       for (j = edges.length; j; ) {
         b = edges[--j]
@@ -197,7 +197,7 @@ function init() {
 
     Delaunay = {
       triangulate: function (vertices, key) {
-        var n = vertices.length,
+        let n = vertices.length,
           i,
           j,
           indices,
@@ -312,7 +312,7 @@ function init() {
         )
           return null
 
-        var a = tri[1][0] - tri[0][0],
+        let a = tri[1][0] - tri[0][0],
           b = tri[2][0] - tri[0][0],
           c = tri[1][1] - tri[0][1],
           d = tri[2][1] - tri[0][1],
@@ -321,7 +321,7 @@ function init() {
         /* Degenerate tri. */
         if (i === 0.0) return null
 
-        var u = (d * (p[0] - tri[0][0]) - b * (p[1] - tri[0][1])) / i,
+        let u = (d * (p[0] - tri[0][0]) - b * (p[1] - tri[0][1])) / i,
           v = (a * (p[1] - tri[0][1]) - c * (p[0] - tri[0][0])) / i
 
         /* If we're outside the tri, fail. */
@@ -336,7 +336,7 @@ function init() {
 
   // Create an array of "triangles" (groups of 3 indices)
 
-  var tri = []
+  let tri = []
   for (i = 0; i < vertices.length; i++) {
     if (tri.length == 3) {
       triangles.push(tri)
@@ -424,7 +424,7 @@ function render() {
 
   if (renderParticles) {
     // Render particles
-    for (var i = 0; i < particleCount; i++) {
+    for (let i = 0; i < particleCount; i++) {
       particles[i].render()
     }
   }
@@ -432,16 +432,16 @@ function render() {
   if (renderMesh) {
     // Render all lines
     context.beginPath()
-    for (var v = 0; v < vertices.length - 1; v++) {
+    for (let v = 0; v < vertices.length - 1; v++) {
       // Splits the array into triplets
       if ((v + 1) % 3 === 0) {
         continue
       }
 
-      var p1 = particles[vertices[v]],
+      let p1 = particles[vertices[v]],
         p2 = particles[vertices[v + 1]]
 
-      var pos1 = position(p1.x, p1.y, p1.z),
+      let pos1 = position(p1.x, p1.y, p1.z),
         pos2 = position(p2.x, p2.y, p2.z)
 
       context.moveTo(pos1.x, pos1.y)
@@ -456,14 +456,14 @@ function render() {
   if (renderLinks) {
     // Possibly start a new link
     if (random(0, linkChance) == linkChance) {
-      var length = random(linkLengthMin, linkLengthMax)
-      var start = random(0, particles.length - 1)
+      let length = random(linkLengthMin, linkLengthMax)
+      let start = random(0, particles.length - 1)
       startLink(start, length)
     }
 
     // Render existing links
     // Iterate in reverse so that removing items doesn't affect the loop
-    for (var l = links.length - 1; l >= 0; l--) {
+    for (let l = links.length - 1; l >= 0; l--) {
       if (links[l] && !links[l].finished) {
         links[l].render()
       } else {
@@ -474,7 +474,7 @@ function render() {
 
   if (renderFlares) {
     // Render flares
-    for (var j = 0; j < flareCount; j++) {
+    for (let j = 0; j < flareCount; j++) {
       flares[j].render()
     }
   }
@@ -490,7 +490,7 @@ function startLink(vertex, length) {
 }
 
 // Particle class
-var Particle = function () {
+let Particle = function () {
   this.x = random(-0.1, 1.1, true)
   this.y = random(-0.1, 1.1, true)
   this.z = random(0, 4)
@@ -500,14 +500,14 @@ var Particle = function () {
   this.neighbors = [] // placeholder for neighbors
 }
 Particle.prototype.render = function () {
-  var pos = position(this.x, this.y, this.z),
+  let pos = position(this.x, this.y, this.z),
     r =
       (this.z * particleSizeMultiplier + particleSizeBase) *
       (sizeRatio() / 1000),
     o = this.opacity
 
   if (flicker) {
-    var newVal = random(-0.5, 0.5, true)
+    let newVal = random(-0.5, 0.5, true)
     this.flicker += (newVal - this.flicker) / flickerSmoothing
     if (this.flicker > 0.5) this.flicker = 0.5
     if (this.flicker < -0.5) this.flicker = -0.5
@@ -544,7 +544,7 @@ Particle.prototype.render = function () {
 }
 
 // Flare class
-var Flare = function () {
+let Flare = function () {
   this.x = random(-0.25, 1.25, true)
   this.y = random(-0.25, 1.25, true)
   this.z = random(0, 2)
@@ -552,7 +552,7 @@ var Flare = function () {
   this.opacity = random(0.001, 0.01, true)
 }
 Flare.prototype.render = function () {
-  var pos = position(this.x, this.y, this.z),
+  let pos = position(this.x, this.y, this.z),
     r = (this.z * flareSizeMultiplier + flareSizeBase) * (sizeRatio() / 1000)
 
   context.beginPath()
@@ -565,7 +565,7 @@ Flare.prototype.render = function () {
 }
 
 // Link class
-var Link = function (startVertex, numPoints) {
+let Link = function (startVertex, numPoints) {
   this.length = numPoints
   this.verts = [startVertex]
   this.stage = 0
@@ -582,17 +582,17 @@ Link.prototype.render = function () {
   // 2. Fade out
   // 3. Finished (delete me)
 
-  var i, p, pos, points
+  let i, p, pos, points
 
   switch (this.stage) {
     // VERTEX COLLECTION STAGE
     case 0:
       // Grab the last member of the link
-      var last = particles[this.verts[this.verts.length - 1]]
+      let last = particles[this.verts[this.verts.length - 1]]
       //console.log(JSON.stringify(last));
       if (last && last.neighbors && last.neighbors.length > 0) {
         // Grab a random neighbor
-        var neighbor = last.neighbors[random(0, last.neighbors.length - 1)]
+        let neighbor = last.neighbors[random(0, last.neighbors.length - 1)]
         // If we haven't seen that particle before, add it to the link
         if (this.verts.indexOf(neighbor) == -1) {
           this.verts.push(neighbor)
@@ -607,7 +607,7 @@ Link.prototype.render = function () {
       if (this.verts.length >= this.length) {
         // Calculate all distances at once
         for (i = 0; i < this.verts.length - 1; i++) {
-          var p1 = particles[this.verts[i]],
+          let p1 = particles[this.verts[i]],
             p2 = particles[this.verts[i + 1]],
             dx = p1.x - p2.x,
             dy = p1.y - p2.y,
@@ -623,7 +623,7 @@ Link.prototype.render = function () {
     case 1:
       if (this.distances.length > 0) {
         points = []
-        //var a = 1;
+        //let a = 1;
 
         // Gather all points already linked
         for (i = 0; i < this.linked.length; i++) {
@@ -632,9 +632,9 @@ Link.prototype.render = function () {
           points.push([pos.x, pos.y])
         }
 
-        var linkSpeedRel = linkSpeed * 0.00001 * canvas.width
+        let linkSpeedRel = linkSpeed * 0.00001 * canvas.width
         this.traveled += linkSpeedRel
-        var d = this.distances[this.linked.length - 1]
+        let d = this.distances[this.linked.length - 1]
         // Calculate last point based on linkSpeed and distance travelled to next point
         if (this.traveled >= d) {
           this.traveled = 0
@@ -652,7 +652,7 @@ Link.prototype.render = function () {
         } else {
           // We're still travelling to the next point, get coordinates at travel distance
           // http://math.stackexchange.com/a/85582
-          var a = particles[this.linked[this.linked.length - 1]],
+          let a = particles[this.linked[this.linked.length - 1]],
             b = particles[this.verts[this.linked.length]],
             t = d - this.traveled,
             x = (this.traveled * b.x + t * a.x) / d,
@@ -679,7 +679,7 @@ Link.prototype.render = function () {
 
           // Render full link between all vertices and fade over time
           points = []
-          var alpha = (1 - this.fade / linkFade) * linkOpacity
+          let alpha = (1 - this.fade / linkFade) * linkOpacity
           for (i = 0; i < this.verts.length; i++) {
             p = particles[this.verts[i]]
             pos = position(p.x, p.y, p.z)
@@ -709,7 +709,7 @@ Link.prototype.drawLine = function (points, alpha) {
   if (points.length > 1 && alpha > 0) {
     context.globalAlpha = alpha
     context.beginPath()
-    for (var i = 0; i < points.length - 1; i++) {
+    for (let i = 0; i < points.length - 1; i++) {
       context.moveTo(points[i][0], points[i][1])
       context.lineTo(points[i + 1][0], points[i + 1][1])
     }
@@ -724,7 +724,7 @@ Link.prototype.drawLine = function (points, alpha) {
 // Utils
 
 function noisePoint(i) {
-  var a = nAngle * i,
+  let a = nAngle * i,
     cosA = Math.cos(a),
     sinA = Math.sin(a),
     rad = nRad

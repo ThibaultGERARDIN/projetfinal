@@ -48,6 +48,12 @@
   flex-direction: row;
 }
 
+@mixin row-jc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 @mixin row-jc-ac {
   display: flex;
   flex-direction: row;

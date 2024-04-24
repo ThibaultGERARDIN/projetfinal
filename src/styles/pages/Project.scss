@@ -4,8 +4,14 @@
 .Project {
   @include col-ac;
   gap: 40px;
+  @media (max-width: 400px) {
+    gap: 20px;
+  }
   .project-collapse {
     @include col-ac;
     gap: 40px;
+    @media (max-width: 400px) {
+      gap: 20px;
+    }
   }
 }
