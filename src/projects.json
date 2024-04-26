@@ -2,13 +2,13 @@
   {
     "id": "project1",
     "name": "Booki",
-    "cover": "../images/booki/cover.png",
+    "cover": "../projetfinal/images/booki/cover.png",
     "pictures": [
-      "../images/booki/desktop.png",
-      "../images/booki/tablet.png",
-      "../images/booki/large-mobile.png",
-      "../images/booki/mobile.png",
-      "../images/booki/figma.png"
+      "../projetfinal/images/booki/desktop.png",
+      "../projetfinal/images/booki/tablet.png",
+      "../projetfinal/images/booki/large-mobile.png",
+      "../projetfinal/images/booki/mobile.png",
+      "../projetfinal/images/booki/figma.png"
     ],
     "excerpt": "Intégration responsive du frontend de l'application de location de logements Booki, à partir de la maquette Figma fournie.",
     "description": "Vous débutez votre alternance en tant que développeur web au sein de la start-up Booki. L'entreprise souhaite développer un site internet qui permette aux usagers de trouver des hébergements et activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS, à partir de la maquette Figma fournie par le designer.",
@@ -20,15 +20,15 @@
   {
     "id": "project2",
     "name": "Sophie Buel",
-    "cover": "../images/sophie-buel/cover.png",
+    "cover": "../projetfinal/images/sophie-buel/cover.png",
     "pictures": [
-      "../images/sophie-buel/cover.png",
-      "../images/sophie-buel/fullpage.png",
-      "../images/sophie-buel/login.png",
-      "../images/sophie-buel/edit.png",
-      "../images/sophie-buel/modal-1.png",
-      "../images/sophie-buel/modal-2.png",
-      "../images/sophie-buel/modal-3.png"
+      "../projetfinal/images/sophie-buel/cover.png",
+      "../projetfinal/images/sophie-buel/fullpage.png",
+      "../projetfinal/images/sophie-buel/login.png",
+      "../projetfinal/images/sophie-buel/edit.png",
+      "../projetfinal/images/sophie-buel/modal-1.png",
+      "../projetfinal/images/sophie-buel/modal-2.png",
+      "../projetfinal/images/sophie-buel/modal-3.png"
     ],
     "excerpt": "Création d'une page web dynamique en JavaScript, à partir d'une base Frontend/Backend déjà partiellement développées. Communication avec une API et manipulation du DOM.",
     "description": "Ce projet vous engage à créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API. Vous travaillerez sur la partie Front-End du site, où vous développerez la page de présentation des travaux de l'architecte à partir du HTML fourni. Cela impliquera la gestion des événements utilisateurs et la manipulation des éléments du DOM avec JavaScript. Vous créerez également une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias. Ces éléments seront développés from scratch, vous offrant l'opportunité de mettre en pratique vos compétences en JavaScript de manière approfondie.Pour la première fois, vous aurez accès à un code back-end pour tester les fonctionnalités. Vous apprendrez à communiquer avec une API, ce qui est crucial pour les applications web modernes.Vous utiliserez Figma pour accéder aux maquettes, Visual Studio Code pour le développement, et GitHub pour la gestion de version de votre projet.",
@@ -40,13 +40,13 @@
   {
     "id": "project3",
     "name": "Menu Maker",
-    "cover": "../images/menu-maker/cover.png",
+    "cover": "../projetfinal/images/menu-maker/cover.png",
     "pictures": [
-      "../images/menu-maker/cover.png",
-      "../images/menu-maker/veille.png",
-      "../images/menu-maker/scrum.png",
-      "../images/menu-maker/kanban.png",
-      "../images/menu-maker/tache.png"
+      "../projetfinal/images/menu-maker/cover.png",
+      "../projetfinal/images/menu-maker/veille.png",
+      "../projetfinal/images/menu-maker/scrum.png",
+      "../projetfinal/images/menu-maker/kanban.png",
+      "../projetfinal/images/menu-maker/tache.png"
     ],
     "excerpt": "Apprentissage de la gestion de projet : veille technologique, choix des technologies adaptées, mise en place méthode agile et tableau Kanban.",
     "description": "Ce projet vous implique dans la planification du développement d'un site web. Votre rôle consistera à planifier le développement du site web, sans intervenir directement dans le codage. Vous aurez accès à la maquette, aux spécifications fonctionnelles et aux User Stories du site. Vous entreprendrez une veille technologique pour rester informé des dernières tendances et technologies pertinentes pour le projet. Cela implique l'utilisation d'un système de veille pour suivre les évolutions dans le domaine du développement web. Vous serez chargé de rédiger les spécifications techniques du projet. Cela comprendra l'identification des besoins fonctionnels et la décomposition des fonctionnalités en tâches spécifiques. Vous utiliserez un outil de gestion de projet, comme Notion, pour organiser le projet et créer un tableau Kanban. Cela vous aidera à suivre le déroulement du projet de manière structurée et efficace.",
@@ -57,14 +57,14 @@
   {
     "id": "project4",
     "name": "Nina Carducci",
-    "cover": "../images/nina-carducci/cover.png",
+    "cover": "../projetfinal/images/nina-carducci/cover.png",
     "pictures": [
-      "../images/nina-carducci/cover.png",
-      "../images/nina-carducci/fullscreen.png",
-      "../images/nina-carducci/rapport1.png",
-      "../images/nina-carducci/rapport2.png",
-      "../images/nina-carducci/rapport3.png",
-      "../images/nina-carducci/rapport4.png"
+      "../projetfinal/images/nina-carducci/cover.png",
+      "../projetfinal/images/nina-carducci/fullscreen.png",
+      "../projetfinal/images/nina-carducci/rapport1.png",
+      "../projetfinal/images/nina-carducci/rapport2.png",
+      "../projetfinal/images/nina-carducci/rapport3.png",
+      "../projetfinal/images/nina-carducci/rapport4.png"
     ],
     "excerpt": "Optimisation et débug du site portfolio d'une photographe. Correction de bugs, optimisation des performances et du référencement, correction des problèmes d'accessibilité",
     "description": "Dans ce projet, vous travaillerez en tant que développeur freelance pour optimiser le référencement d’un site, en améliorant sa performance et son accessibilité. Votre première tâche sera d'identifier les problèmes de chargement et de référencement. Vous utiliserez des outils tels que Lighthouse et Wave pour évaluer les performances actuelles du site et son accessibilité. Vous proposerez ensuite des recommandations pour améliorer la vitesse de chargement, la structure du code, et le référencement. Après avoir élaboré ces recommandations, vous les appliquerez en modifiant le code du site. Votre objectif sera d'améliorer les performances et l'accessibilité du site pour un meilleur référencement sur les moteurs de recherche.Enfin, vous créerez un rapport illustrant les résultats avant et après les modifications. Ce rapport comprendra des captures d'écran des audits, ainsi que des explications sur les changements apportés et leur impact sur le référencement et l'accessibilité du site.",
@@ -84,14 +84,14 @@
   {
     "id": "project5",
     "name": "Kasa",
-    "cover": "../images/kasa/cover.png",
+    "cover": "../projetfinal/images/kasa/cover.png",
     "pictures": [
-      "../images/kasa/home.png",
-      "../images/kasa/about.png",
-      "../images/kasa/fiche.png",
-      "../images/kasa/error.png",
-      "../images/kasa/mobile.png",
-      "../images/kasa/mobile2.png"
+      "../projetfinal/images/kasa/home.png",
+      "../projetfinal/images/kasa/about.png",
+      "../projetfinal/images/kasa/fiche.png",
+      "../projetfinal/images/kasa/error.png",
+      "../projetfinal/images/kasa/mobile.png",
+      "../projetfinal/images/kasa/mobile2.png"
     ],
     "excerpt": "Développement d'une application de location en React avec Create React App et Sass. Utilisation de react router et des composants.",
     "description": "Dans ce projet, vous allez implémenter le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. Vous travaillerez sur la logique de présentation des données et les composants React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur. Vous utiliserez React Router pour configurer la navigation entre les différentes pages de l'application. Cela vous permettra de comprendre comment gérer efficacement le routage dans une application web moderne. Le projet se concentrera exclusivement sur le développement front-end, en se basant sur les maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON. Vous débuterez le projet avec Create React App, un outil qui simplifie la configuration initiale d'une application React. Vous utiliserez également Node.js pour exécuter du code JavaScript en dehors du navigateur.",
@@ -112,13 +112,13 @@
   {
     "id": "project6",
     "name": "Mon Vieux Grimoire",
-    "cover": "../images/mon-vieux-grimoire/cover.png",
+    "cover": "../projetfinal/images/mon-vieux-grimoire/cover.png",
     "pictures": [
-      "../images/mon-vieux-grimoire/fullpage.png",
-      "../images/mon-vieux-grimoire/book.png",
-      "../images/mon-vieux-grimoire/login.png",
-      "../images/mon-vieux-grimoire/addbook.png",
-      "../images/mon-vieux-grimoire/database.png"
+      "../projetfinal/images/mon-vieux-grimoire/fullpage.png",
+      "../projetfinal/images/mon-vieux-grimoire/book.png",
+      "../projetfinal/images/mon-vieux-grimoire/login.png",
+      "../projetfinal/images/mon-vieux-grimoire/addbook.png",
+      "../projetfinal/images/mon-vieux-grimoire/database.png"
     ],
     "excerpt": "Création du backend d'une application de notation de livres avec NodeJs et MongoDB. Gestion des opérations CRUD, création d'une API et mise en place d'une base de données.",
     "description": "Votre rôle sera de créer un serveur avec Express et de le connecter à une base de données MongoDB. Cela impliquera la mise en place de la structure du serveur et la gestion de la communication entre le serveur et la base de données. Vous développerez les modèles de données et implémenterez des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) pour la gestion des livres et des notations. Cela nécessitera une attention particulière à la sécurité des données et à leur stockage sécurisé. Vous devrez implémenter un système d'authentification sécurisé pour les utilisateurs du site. Le projet comprendra également la gestion du téléchargement et de l'optimisation des images, ainsi que l'ajout de fonctionnalités pour noter les livres et calculer la note moyenne. Vous respecterez les bonnes pratiques du Green Code pour réduire l'empreinte écologique du site. Pour compléter le projet, vous utiliserez Mongoose pour modéliser les données MongoDB, et vous suivrez une architecture MVC (Modèle-Vue-Contrôleur) pour structurer votre application.",

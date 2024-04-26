@@ -56,7 +56,7 @@ function Home() {
               <br />
               <br />
               Si vous avez une question ou un besoin, n'hésitez pas à{' '}
-              <a href="/contact" className="contact-link">
+              <a href="/projetfinal/#/contact" className="contact-link">
                 me contacter
               </a>
               .
@@ -74,7 +74,7 @@ function Home() {
             </a>
             <a
               className="link"
-              href="../images/cv.pdf"
+              href="../projetfinal/images/cv.pdf"
               target="_blank"
               rel="noreferrer"
             >

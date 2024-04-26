@@ -1,12 +1,13 @@
 import '../../styles/pages/Portfolio.scss'
 import Card from '../../components/Card'
 import { Link } from 'react-router-dom'
-
 import Banner from '../../components/Banner'
-
-let projects = require('../../projects.json')
+import GetProjects from '../../utils/GetProjects'
 
 function Portfolio() {
+  GetProjects()
+  const projects = JSON.parse(localStorage.getItem('projects'))
+
   return (
     <div className="Portfolio">
       <Banner>

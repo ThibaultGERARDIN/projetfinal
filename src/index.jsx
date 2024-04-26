@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import Portfolio from './pages/Portfolio'
 import ScrollToTop from './utils/ScrollToTop'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -19,7 +19,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
       <ScrollToTop />
       <Header />
       <Routes>
@@ -31,7 +31,7 @@ root.render(
         <Route path="/erreur404" element={<Error />} />
       </Routes>
       <Footer />
-    </Router>
+    </HashRouter>
   </React.StrictMode>,
 )
 

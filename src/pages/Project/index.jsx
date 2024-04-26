@@ -7,10 +7,9 @@ import Tag from '../../components/Tag'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 
-let projects = require('../../projects.json')
-
 function Project() {
   const { projectName } = useParams()
+  const projects = JSON.parse(localStorage.getItem('projects'))
   const currentProject = projects.find(({ name }) => name === projectName)
 
   return currentProject ? (
