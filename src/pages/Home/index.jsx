@@ -74,7 +74,7 @@ function Home() {
             </a>
             <a
               className="link"
-              href="../projetfinal/images/cv.pdf"
+              href="https://firebasestorage.googleapis.com/v0/b/portfolio-99d8e.appspot.com/o/booki%2FCV%20Thibault%20G%C3%A9rardin%20D%C3%A9veloppeur%20Web.pdf?alt=media&token=b5a63a95-93d0-48a9-91f3-b7230a31c86e"
               target="_blank"
               rel="noreferrer"
             >
